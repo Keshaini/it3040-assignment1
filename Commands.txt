@@ -1,0 +1,35 @@
+===================================================
+ IT3040 Assignment 1 - Quick Command Reference
+===================================================
+
+STEP 1: Navigate to project folder
+-----------------------------------
+cd /d D:\test_automation_ui
+
+STEP 2: Install dependencies (one time only)
+-----------------------------------
+pip install -U pip
+pip install playwright openpyxl
+playwright install
+
+STEP 3: Run the test - Image Resizing
+-----------------------------------
+python image_preview_test.py --url "https://www.pixelssuite.com/resize-image" --slow-mo-ms 2000
+
+STEP 3 (Alternative): Run the test - PNG Compressor
+-----------------------------------
+python image_preview_test.py --url "https://www.pixelssuite.com/compress-image" --slow-mo-ms 2000
+
+STEP 3 (Alternative): Run the test - Crop PNG
+-----------------------------------
+python image_preview_test.py --url "https://www.pixelssuite.com/crop-image" --slow-mo-ms 2000
+
+STEP 3 (Alternative): Run the test - Image Format Conversion
+-----------------------------------
+python image_preview_test.py --url "https://www.pixelssuite.com/convert-to-png" --slow-mo-ms 2000
+
+STEP 4: Check results
+-----------------------------------
+- Open execution_results.csv in Excel
+- Open results\preview_pass.png to view screenshot
+===================================================
